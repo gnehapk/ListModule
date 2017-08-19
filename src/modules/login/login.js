@@ -27,6 +27,11 @@
             $state.go("list");
         }
 
+        /**
+         * @name login
+         * @desc do login and  perform all the post operations 
+         * @memberOf LoginController
+         */
         function login() {
 
             vm.formSubmitInProgress = true;
@@ -55,6 +60,11 @@
             }
         }
 
+        /**
+         * @name login
+         * @desc validates the login page fields 
+         * @memberOf LoginController
+         */
         function validateUiFields() {
             var isFormValid = true,
                 form = vm.signInForm;

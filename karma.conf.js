@@ -31,10 +31,8 @@ module.exports = function (config) {
             moduleName: "templates"
         },
 
-        //reporters: ["progress", "coverage"],
         reporters: ["mocha", "coverage"],
         mochaReporter: {
-            // full, autowatch, minimal
             output: "autowatch",
             ignoreSkipped: false
         },

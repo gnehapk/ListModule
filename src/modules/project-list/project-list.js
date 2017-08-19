@@ -23,6 +23,11 @@
 
         init();
 
+        /**
+         * @name init
+         * @desc contains the initialisation logic
+         * @memberOf ListController
+         */
         function init() {
             vm.name = AuthManager.getUserInfo().name;
 
@@ -33,6 +38,11 @@
 
         }
 
+        /**
+         * @name goToReadMe
+         * @desc takes the user to readme page
+         * @memberOf ListController
+         */
         function goToReadMe($event, project) {
             $state.go("view", { userId: AuthManager.getUserInfo().userId, projectName: project.name });
         }

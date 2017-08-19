@@ -22,6 +22,11 @@
 
         init();
 
+        /**
+         * @name init
+         * @desc contains the initialisation logic
+         * @memberOf viewController
+         */
         function init() {
             projectFactory.getReadme($stateParams.projectName)
                 .then(function(data) {

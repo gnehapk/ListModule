@@ -19,6 +19,11 @@
 
         vm.logout = logout;
 
+        /**
+         * @name logout
+         * @desc do logout and  perform all the post operations 
+         * @memberOf headerController
+         */
         function logout(){
             AuthManager.logout()
             .then(function (data) {

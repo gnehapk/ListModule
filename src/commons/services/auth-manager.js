@@ -21,17 +21,33 @@
             setFlags: setFlags
         };
 
+        /**
+         * @name setAuthHeader
+         * @desc sets authorization header
+         * @memberOf AuthManager
+         */
         function setAuthHeader() {
             $http.defaults.headers.common["Authorization"] = "Bearer " + JSON.parse(localStorage.getItem("userInfo")).accessToken;
         }
 
+        /**
+         * @name globalUser
+         * @desc return the logged in user
+         * @memberOf AuthManager
+         */
         function globalUser() {
             return {
                 "userId": null,
-                "accessToken": null
+                "accessToken": null,
+                "name": null
             };
         }
 
+        /**
+         * @name setUserInfo
+         * @desc set details of logged in user to localStorage
+         * @memberOf AuthManager
+         */
         function setUserInfo(user, accesstoken, name) {
             authApiFactory.globalUser.userId = user.username;
             authApiFactory.globalUser.accessToken = accesstoken;
@@ -39,10 +55,20 @@
             localStorage.setItem("userInfo", JSON.stringify(authApiFactory.globalUser));
         }
 
+        /**
+         * @name getUserInfo
+         * @desc get details of logged in user
+         * @memberOf AuthManager
+         */
         function getUserInfo() {
             return JSON.parse(localStorage.getItem("userInfo"));
         }
 
+        /**
+         * @name clearCredentials
+         * @desc remove all details of logged in user from localStorage
+         * @memberOf AuthManager
+         */
         function clearCredentials() {
             authApiFactory.globalUser.userId = null;
             authApiFactory.globalUser.accessToken = null;
@@ -51,6 +77,11 @@
             authApiFactory.isUserLoggedIn = false;
         }
 
+        /**
+         * @name clearCredentials
+         * @desc mocked the logout http call
+         * @memberOf AuthManager
+         */
         function logout() {
             var deferred = $q.defer();
 
@@ -61,7 +92,11 @@
             return deferred.promise;
         }
 
-
+        /**
+         * @name authenticate
+         * @desc mocked the login http call
+         * @memberOf AuthManager
+         */
         function authenticate(user) {
             var deferred = $q.defer();
 
@@ -79,6 +114,11 @@
             }
         }
 
+        /**
+         * @name setFlags
+         * @desc set isUserLoggedIn flag
+         * @memberOf AuthManager
+         */
         function setFlags() {
             $rootScope.isUserLoggedIn = false;
         }
