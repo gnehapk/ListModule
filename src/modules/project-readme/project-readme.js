@@ -30,7 +30,6 @@
         function init() {
             projectFactory.getReadme($stateParams.projectName)
                 .then(function(data) {
-                    console.log(data);
                     vm.readme = data.readme;
                 });
 
