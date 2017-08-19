@@ -1,0 +1,12 @@
+.project-list-container {
+	.list-table {
+		margin: 45px;
+
+		.list-group-item {
+			padding: 10px;
+			border-top: 1px solid $color-dark-gray;
+			color: $color-boston-blue;
+			cursor: pointer;
+		}
+	}
+}

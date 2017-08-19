@@ -1,0 +1,42 @@
+{
+    "project_1": {
+        "name": "project_1",
+        "id": 1,
+        "readme": {
+            "desc": "A calendar plugin which can be used in form",
+            "steps": ["sudo npm install -g gulp", "npm install -g http-server", "npm install", "gulp", "cd dist", "Run http-server", "Open localhost:8080/"]
+        }
+    },
+    "project_2": {
+        "name": "project_2",
+        "id": 2,
+        "readme": {
+            "desc": "A calculator plugin which can be used in form",
+            "steps": ["sudo npm install -g gulp", "npm install -g http-server", "npm install", "gulp", "cd dist", "http-server",  "Run http-server", "Open localhost:8080/"]
+        }
+    },
+    "project_3": {
+        "name": "project_3",
+        "id": 3,
+        "readme": {
+            "desc": "A graphical user interface for Tendrl, a modern, extensible web-based storage management platform",
+            "steps": ["sudo npm install -g gulp", "npm install -g http-server", "npm install", "gulp", "cd dist", "http-server",  "Run http-server", "Open localhost:8080/"]
+        }
+    },
+    "project_4": {
+        "name": "project_4",
+        "id": 1,
+        "readme": {
+            "desc": "A date picker plugin which can be used in form",
+            "steps": ["sudo npm install -g gulp", "npm install -g http-server", "npm install", "gulp", "cd dist", "http-server",  "Run http-server", "Open localhost:8080/"]
+        }
+    },
+    "project_5": {
+        "name": "project_5",
+        "id": 1,
+        "readme": {
+            "desc": "A switch plugin which can be used in form",
+            "steps": ["sudo npm install -g gulp", "npm install -g http-server", "npm install", "gulp", "cd dist", "http-server",  "Run http-server", "Open localhost:8080/"]
+        }
+    }
+}

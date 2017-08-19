@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GitIQ</title>
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="cssLibraries/libraries.css">
+    <link href="commons/scss/main.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="jsLibraries/libraries.js"></script>
+    <script src="plugin-bundle.js" type="text/javascript"></script>
+</head>
+
+<body ng-app="GitProjectsModule" class="list-app container">
+	<div class="row" >
+		<header ng-show="isUserLoggedIn"></header>
+   	</div>
+    <div ui-view></div>
+</body>
+
+</html>

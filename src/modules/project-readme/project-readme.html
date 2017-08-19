@@ -1,0 +1,24 @@
+<div class="project-readme-container">
+    <div class="container">
+        <h2>{{viewCntrl.projectName}}</h2>
+        <div class="horizontal-line"></div>
+        <div class="row">
+            <h1>Welcome to {{viewCntrl.projectName}}'s Readme file</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 sub-title">{{viewCntrl.readme.desc}}</div>
+        </div>
+
+        <div class="row">
+            <h1>Installing this project</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 sub-title">Run the following commands:</div>
+        </div>
+        <div class="row">
+            <ul>
+                <li ng-repeat="step in viewCntrl.readme.steps" class="command">{{step}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

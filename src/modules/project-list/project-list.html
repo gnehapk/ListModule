@@ -1,0 +1,9 @@
+<div class="project-list-container">
+    <div class="container">
+        <h2>{{listCntrl.name}}'s projects</h2>
+        <div class="horizontal-line"></div>
+        <div class="row list-table">
+            <div class="col-md-12 list-group-item" ng-repeat="project in listCntrl.projectList" ng-click="listCntrl.goToReadMe($event, project)">{{listCntrl.formatProjectName(project.name)}}</div>
+        </div>
+    </div>
+</div>
